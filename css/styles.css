@@ -27,16 +27,18 @@ nav{
 }
 
 
+
 .row{
-width: 100%;
-max-width: 1206px;
-margin: 0 auto;
+    width: 100%;
+    max-width: 1252px;
+    margin: 0 auto;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 24px;
 }
 
 .logo {
@@ -55,16 +57,16 @@ margin: 0 auto;
 
 .nav__links {
     display: flex;
-    padding-left: 348px;
+    padding-left: 386px;
     font-weight: 600;
 
 }
 
 .nav__link{
     display: flex;
-    padding-left: 36px;
+    padding-left: 46px;
     align-items: center;
-    padding-right: 4px;
+    padding-right: 2px;
     font-weight: 500;
 }
 
@@ -74,10 +76,112 @@ margin: 0 auto;
 }
 
 .btn{
-    background-color: #302842;
-    color: aliceblue;
+    background-color: #008b8b;
+    color: rgb(255, 255, 255);
     padding: 12px 32px;
     border-radius: 144px;
     border: none;
     margin-left: 16px;
+    font-weight: 500;
+}
+
+.head{
+    display: flex;
+    padding-top: 96px;
+}
+
+.container-left{
+    display: flex;
+    justify-content: start;
+    max-width: 40%;
+    flex-wrap: wrap;
+
+}
+.subtitle-header{
+    font-weight: 600;
+    font-size: 38px;
+    padding-left: 0%;
+}
+
+
+.headtext{
+    height: 18%;
+    font-size: 44px;
+    width: 600px;
+}
+
+.container-right{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 60%;
+}
+
+
+.text-effect_1{
+    color: #008b8b;
+}
+
+.text-effect_1:hover{
+    cursor: pointer;
+    color: rgb(20, 22, 22);
+    filter: hue-rotate(1080deg);
+    transition: all 3000ms ease;   
+}
+
+.emailstyle {
+    
+    padding-left: 1.5rem;
+    padding-right: 274px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 9999px;
+    border-width: 1.8px;
+    width: 100%;
+    font-weight: 500;
+    transition-duration: 300ms;
+   
+}
+
+
+.emailbutton {
+    letter-spacing: 0.5px;
+    color: white;
+    font-size: 16px;
+    background-color: #008b8b;
+    cursor: pointer;
+    margin-right: 8px;
+    position: absolute;
+    border-radius: 44px;
+    padding: 16px;
+    display: flex;
+    width: 148px;
+
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.newsletter{
+    height: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-undertext{
+    line-height: 32px;
+    margin-top: 24px;
+    font-weight: 600px;
+    
+}
+
+.customers{
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(0, 119, 119,var(--tw-text-opacity));
 }
