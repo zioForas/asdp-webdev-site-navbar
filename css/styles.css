@@ -29,9 +29,11 @@ nav{
 
 
 .row{
+
     width: 100%;
     max-width: 1252px;
     margin: 0 auto;
+
 }
 
 .nav{
@@ -87,7 +89,7 @@ nav{
 
 .head{
     display: flex;
-    padding-top: 96px;
+    padding-top:124px ;
 }
 
 .container-left{
@@ -119,7 +121,7 @@ nav{
 
 
 .text-effect_1{
-    color: #008b8b;
+    color: #125555;
 }
 
 .text-effect_1:hover{
@@ -131,10 +133,10 @@ nav{
 
 .emailstyle {
     
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-right: 274px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 9999px;
     border-width: 1.8px;
     width: 100%;
@@ -147,13 +149,16 @@ nav{
 .emailbutton {
     letter-spacing: 0.5px;
     color: white;
-    font-size: 16px;
+   
     background-color: #008b8b;
     cursor: pointer;
     margin-right: 8px;
     position: absolute;
-    border-radius: 44px;
-    padding: 16px;
+    border-radius: 9999px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 18px;
     display: flex;
     width: 148px;
 
@@ -171,10 +176,15 @@ nav{
 }
 
 .header-undertext{
-    line-height: 32px;
-    margin-top: 24px;
-    font-weight: 600px;
+padding-top: 76px;
+font-size:16px;
+font-weight: 500;
+padding-bottom: 36px;
     
+}
+
+.sponsors{
+    padding-top: 56px;
 }
 
 .customers{
@@ -182,6 +192,73 @@ nav{
     font-size: 0.875rem;
     letter-spacing: 0.05em;
     font-weight: 700;
-    --tw-text-opacity: 1;
+    --tw-text-opacity: 0.7;
     color: rgba(0, 119, 119,var(--tw-text-opacity));
 }
+
+.sponsors-customers{
+  opacity: 0.6;
+  cursor: pointer;
+  padding-top: 18px;
+  width: 100%;
+}
+
+/*Features Section*/
+
+.container{
+    padding: 80px 0;
+}
+
+ .h3features{
+    color: #125555e8;
+    display: flex;
+    justify-content: center;
+ }
+
+ .header-features{
+    font-weight: 800;
+    font-size: 42px;
+    padding-top: 1.4%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .service-features{
+    padding-top: 28px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+ }
+
+ .services{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+ }
+
+ .service{
+    padding: 64px;
+    display: flex;
+    width: calc(100%/3);
+    
+
+ }
+
+ .description{
+    word-spacing: 6px;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+ }
+
+ .img-round{
+     position: relative;
+    filter: invert(48%) sepia(79%) saturate(136%) hue-rotate(999deg) brightness(118%) contrast(119%);
+    border: #1f2323 solid;
+    border-width: 1px;
+    text-align: center;
+    border-radius: 9999px;
+    padding: 1.25rem;
+    flex-shrink: 0;
+ }
+
