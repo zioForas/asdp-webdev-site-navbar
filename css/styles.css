@@ -298,6 +298,8 @@ nav {
 }
 
 .h1work-features {
+  letter-spacing: 2px;
+  word-spacing: 4px;
   font-weight: 800;
   font-size: 42px;
   padding-top: 1.4%;
@@ -335,6 +337,7 @@ nav {
 /*Get started */
 
 .work-started {
+  padding-bottom: 98px;
   padding-top: 98px;
 }
 
@@ -429,4 +432,118 @@ nav {
 .titles{
   font-weight:500;
   color: #125555;
+}
+
+/*Values*/
+
+.fonts {
+  display: flex;
+}
+
+.fonts-3 {
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.fonts-4 {
+  margin-right: 10px;
+  background-color: #125555;
+  color: white;
+  text-align: center;
+  padding: 13px;
+  border-radius: 9999px;
+}
+.fonts-5 {
+  display: flex;
+  align-items: center;
+}
+
+.fonts-6 {
+  max-width: 90%;
+  padding-bottom: 30px;
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+
+}
+
+.h3-plans{
+  font-weight: 400;
+  word-spacing: 2px;
+  padding-top: 18px;
+  line-height: 1.5em;
+  min-width:200px;
+  max-width:620px;
+  text-align:center;
+  margin:0 auto;
+}
+
+/*plans*/
+
+.plans{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  justify-content: space-evenly;
+}
+
+.plan{
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+
+  border: 1px rgb(0, 0, 0) solid;
+}
+
+.bqyt{
+  width: 100%;
+max-width: 24rem;
+margin-top: 4rem;
+text-align: center;
+padding-left: 2rem;
+padding-right: 2rem;
+border-radius: 0.5rem;
+--tw-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+position: relative;
+padding-top: 0.5rem;
+display: flex;
+flex-direction: column;
+background-position: 0% 0%;
+background-repeat: repeat;
+background-attachment: scroll;
+background-size: auto;
+background-origin: padding-box;
+background-clip: border-box;
+--tw-bg-opacity: 1;
+background-color: rgba(100,21,255,var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+color: rgba(247,250,252,var(--tw-text-opacity));
+background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+.bqat{
+  width: 100%;
+  max-width: 24rem;
+  margin-top: 4rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  position: relative;
+  padding-top: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(26,32,44,var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255,255,255,var(--tw-bg-opacity));
+  display: flex;
+  flex-direction: column;
+}
+
+.dogs{            /*REMOVE THIS DO PROPERLY ITS JUST A PLACEHOLDER*/
+  margin-bottom: 400px; 
 }
