@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dianci's Templates</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/"></script>
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -31,6 +31,34 @@
             <div class="nav-login">
               <a href="#" class="nav__link">Login</a>
               <button class="btn">Sign Up</button>
+            </div>
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close"  onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#landing" class="menu__link" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#features" class="menu__link" onclick="closeMenu()">Blog</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#footer" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                 <button class="btn"> <a href="#" class="menu__link" onclick="closeMenu()">Login</a></button>
+                </li>
+                <li class="menu__list">
+                  <button class="btn"> <a href="#" class="menu__link" onclick="closeMenu()">Sign Up</a></button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

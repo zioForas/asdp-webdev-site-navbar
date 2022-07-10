@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+body{
+ 
+  background-color: #c3dddd;
+}
 
 li {
   list-style: none;
@@ -12,7 +16,7 @@ li {
 
 
 a {
-  color: rgb(8, 5, 5);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -55,6 +59,7 @@ nav {
   display: flex;
   padding-left: 386px;
   font-weight: 600;
+  justify-content: center;
 }
 
 .nav__link {
@@ -70,7 +75,7 @@ nav {
 }
 
 .btn {
-  background-color: #008b8b;
+  background-color: #266a67;
   color: rgb(255, 255, 255);
   padding: 12px 32px;
   border-radius: 144px;
@@ -79,14 +84,65 @@ nav {
   font-weight: 500;
 }
 
-.btn__menu {
+.btn__menu{
+  display: none;
   background-color: transparent;
   font-size: 40px;
-  border: none;
   text-align: center;
-  color: #5c15e9;
-  display: none;
+  border: none;
+  color: #1e635e;
 }
+
+.menu__backdrop{
+ 
+  position: absolute;   /*so the burger menu does not affect nav items*/
+  background-color: #041212;
+  top: 0;
+  left: 0;
+  right: 0;
+   bottom: 0;
+  z-index: 100;
+  /*display: flex*/;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+.menu__links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu--open{
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+.btn__menu--close{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: white;
+}
+
+.menu__link{
+  font-size: 40px;
+  color: white;
+}
+
+.menu__list{
+  padding: 32px 0;
+
+}
+/*header*/
 
 .head {
   display: flex;
@@ -152,7 +208,7 @@ nav {
   letter-spacing: 0.5px;
   color: white;
 
-  background-color: #008b8b;
+  background-color: #1e635e;
   cursor: pointer;
   margin-right: 8px;
   position: absolute;
@@ -690,18 +746,6 @@ color: white;
 
 
 
-.bg{
-  
-  background-image: url(/assets/nicething-removebg-preview.png);
-  background-color: #1a1a1a;
-  background-position: center;
-  background-repeat:repeat-x;
-  background-size: cover;
-  background-size:780px;
-
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
 
 
 
@@ -745,3 +789,34 @@ color: white;
 
 /*button hamburger*/
 
+@media (max-width: 1200px) {
+  .nav__links, .nav-login {
+    display: none;
+  }
+  .btn__menu{
+    display: block;
+  }
+  .head{
+    align-items: center;
+    flex-flow: column;
+  }
+.services{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+}
+
+.service{
+  align-items: center;
+  
+
+}
+.service-container{
+  width: 300px;
+}
+.work{
+  display: flex;
+  flex-flow: column;
+}
+}
